@@ -1,0 +1,1361 @@
+[
+    {
+        "sport": "football",
+        "covers":[{
+            "date": "02132017",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "team: new england patriots",
+            "gender": "male"
+        },
+        {
+            "date": "01302017",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "tom brady, matt ryan",
+            "gender": "male"
+        },
+        {
+            "date": "01232017",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "aaron rodgers",
+            "gender": "male"
+        },
+        {
+            "date": "01232017",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "tom brady",
+            "gender": "male"
+        },
+        {
+            "date": "01162017",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: clemson",
+            "gender": "male"
+        },{
+            "date": "12122016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "jalen hurts",
+            "gender": "male"
+        },
+        {
+            "date": "12122016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "J.T. Barrett",
+            "gender": "male"
+        },
+        {
+            "date": "12122016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "darrell daniels",
+            "gender": "male"
+        },
+        {
+            "date": "11212017",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "team: raiders",
+            "gender": "male"
+        },
+        {
+            "date": "10172016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "dak prescott",
+            "gender": "male"
+        },
+        {
+            "date": "09262016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "lamar jackson",
+            "gender": "male"
+        },
+        {
+            "date": "09192016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "kahlil mack",
+            "gender": "male"
+        },
+        {
+            "date": "09122016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "deandre hopkins",
+            "gender": "male"
+        },
+        {
+            "date": "09122016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "aaron donald",
+            "gender": "male"
+        },
+        {
+            "date": "09122016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "trai turner",
+            "gender": "male"
+        },
+        {
+            "date": "09122016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "mike daniels",
+            "gender": "male"
+        },
+        {
+            "date": "08262016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "larry fitzgerald",
+            "gender": "male"
+        },
+        {
+            "date": "08292016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "antonio brown",
+            "gender": "male"
+        },
+        {
+            "date": "08292016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "von miller",
+            "gender": "male"
+        },
+        {
+            "date": "08292016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "cam newton",
+            "gender": "male"
+        },
+        {
+            "date": "08152016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "jabrill peppers",
+            "gender": "male"
+        },
+        {
+            "date": "08152016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "josh rosen",
+            "gender": "male"
+        },
+        {
+            "date": "08152016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "deshuan watson",
+            "gender": "male"
+        },
+        {
+            "date": "08152016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "greg ward jr",
+            "gender": "male"
+        },
+        {
+            "date": "05092016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "jared goff",
+            "gender": "male"
+        },
+        {
+            "date": "05092016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "carson wentz",
+            "gender": "male"
+        },
+        {
+            "date": "05092016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "paxton lynch",
+            "gender": "male"
+        },
+        {
+            "date": "04182016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "victor cruz",
+            "gender": "male"
+        },
+        {
+            "date": "04182016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "von miller",
+            "gender": "male"
+        },
+        {
+            "date": "03212016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "buddy hield",
+            "gender": "male"
+        },
+        {
+            "date": "02152016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "von miller",
+            "gender": "male"
+        },
+        {
+            "date": "02082016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "position: quaterback",
+            "gender": "male"
+        },
+        {
+            "date": "02012016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "cam newton",
+            "gender": "male"
+        },
+        {
+            "date": "02012016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "von miller, tom brady",
+            "gender": "male"
+        },
+        {
+            "date": "01252016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "peyton manning, tom brady",
+            "gender": "male"
+        },
+        {
+            "date": "01252016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "larry fitzgerald",
+            "gender": "male"
+        },
+        {
+            "date": "01182016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: alabama",
+            "gender": "male"
+        },
+        {
+            "date": "01112016",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "adrian peterson",
+            "gender": "male"
+        },
+        {
+            "date": "01112016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: clemson",
+            "gender": "male"
+        },
+        {
+            "date": "12142015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "deshaun watson",
+            "gender": "male"
+        },
+        {
+            "date": "12072015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "brock osweiler",
+            "gender": "male"
+        },
+        {
+            "date": "11302015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: iowa",
+            "gender": "male"
+        },
+        {
+            "date": "11232015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "todd gurley",
+            "gender": "male"
+        },
+        {
+            "date": "11162016",
+            "sport": "football",
+            "level": "college",
+            "athlete": "deshaun watson",
+            "gender": "male"
+        },
+        {
+            "date": "10192015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "leonard fournette",
+            "gender": "male"
+        },
+        {
+            "date": "09282015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "trae elston",
+            "gender": "male"
+        },
+        {
+            "date": "09212015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "aaron rodgers",
+            "gender": "male"
+        },
+        {
+            "date": "09212015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "marcus mariota",
+            "gender": "male"
+        },
+        {
+            "date": "09142015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "tom brady",
+            "gender": "male"
+        },
+        {
+            "date": "09142015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "cody kessler",
+            "gender": "male"
+        },
+        {
+            "date": "09072015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "odell beckham jr",
+            "gender": "male"
+        },
+        {
+            "date": "09072015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "lavonte david",
+            "gender": "male"
+        },
+        {
+            "date": "09072015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "russell wilson",
+            "gender": "male"
+        },
+        {
+            "date": "09072015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "j.j. watt",
+            "gender": "male"
+        },
+        {
+            "date": "09072015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "matt forte",
+            "gender": "male"
+        },
+        {
+            "date": "08172015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "antonio brown",
+            "gender": "male"
+        },
+        {
+            "date": "08172015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "marshawn lynch",
+            "gender": "male"
+        },
+        {
+            "date": "08172015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "ryan tannehill",
+            "gender": "male"
+        },
+        {
+            "date": "08172015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "robert quinn",
+            "gender": "male"
+        },
+        {
+            "date": "08102015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: ohio state",
+            "gender": "male"
+        },
+        {
+            "date": "08102015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: notre dame",
+            "gender": "male"
+        },
+        {
+            "date": "08102015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: mississippi state",
+            "gender": "male"
+        },
+        {
+            "date": "08102015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: tcu",
+            "gender": "male"
+        },
+        {
+            "date": "08032015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "pete carroll",
+            "gender": "male"
+        },
+        {
+            "date": "07272015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "darrelle revis",
+            "gender": "male"
+        },
+        {
+            "date": "07062015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "brett favre",
+            "gender": "male"
+        },
+        {
+            "date": "05182015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "jim harbaugh",
+            "gender": "male"
+        },
+        {
+            "date": "05112015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "marcus mariota",
+            "gender": "male"
+        },
+        {
+            "date": "04202015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "team: buffalo bills",
+            "gender": "male"
+        },
+        {
+            "date": "02092015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "team: new england patriots",
+            "gender": "male"
+        },
+        {
+            "date": "02022015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "richard sherman",
+            "gender": "male"
+        },
+        {
+            "date": "01262015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "team: seattle seahawks",
+            "gender": "male"
+        },
+        {
+            "date": "01192015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: ohio state",
+            "gender": "male"
+        },
+        {
+            "date": "01122015",
+            "sport": "football",
+            "level": "college",
+            "athlete": "team: oregan",
+            "gender": "male"
+        },
+        {
+            "date": "01122015",
+            "sport": "football",
+            "level": "pro",
+            "athlete": "rob gronkowski",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "baseball",
+        "covers":[{
+            "date": "05292017",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "Lance McCullers",
+            "gender": "male"
+        },
+        {
+            "date": "05152017",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "aaron judge",
+            "gender": "male"
+        },
+        {
+            "date": "05012017",
+            "sport": "baseball",
+            "level": "college",
+            "athlete": "hunter greene",
+            "gender": "male"
+        },
+        {
+            "date": "03272017",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: red sox",
+            "gender": "male"
+        },
+        {
+            "date": "11212016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "chicago cubs*",
+            "gender": "male"
+        },
+        {
+            "date": "11142017",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "anthony rizzo",
+            "gender": "male"
+        },
+        {
+            "date": "10102016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "chicago cubs*",
+            "gender": "male"
+        },
+        {
+            "date": "07042016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "ken griffey jr",
+            "gender": "male"
+        }
+        ,
+        {
+            "date": "05162016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: chicago cubs",
+            "gender": "male"
+        },
+        {
+            "date": "05162016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "vin scully",
+            "gender": "male"
+        },
+        {
+            "date": "03282016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: houston astros*",
+            "gender": "male"
+        },
+        {
+            "date": "03283016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: chicago cubs*",
+            "gender": "male"
+        },
+        {
+            "date": "03282016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: new york mets",
+            "gender": "male"
+        },
+        {
+            "date": "03282016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: san francisco giants",
+            "gender": "male"
+        },
+        {
+            "date": "11092015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: kansas city royals",
+            "gender": "male"
+        },
+        {
+            "date": "11022015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "daniel murphey",
+            "gender": "male"
+        },
+        {
+            "date": "11022015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "lorenzo cain",
+            "gender": "male"
+        },
+        {
+            "date": "10122015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: toronto blue jays",
+            "gender": "male"
+        },
+        {
+            "date": "08312015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: chicago cubs",
+            "gender": "male"
+        },
+        {
+            "date": "08242015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: st louis cardinals",
+            "gender": "male"
+        },
+        {
+            "date": "06012015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "eric hosmer",
+            "gender": "male"
+        },
+        {
+            "date": "03302016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: cleveland",
+            "gender": "male"
+        },
+        {
+            "date": "03302015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: kansas city royals",
+            "gender": "male"
+        },
+        {
+            "date": "03302015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: nationals",
+            "gender": "male"
+        },
+        {
+            "date": "03302016",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "team: mariners",
+            "gender": "male"
+        },
+        {
+            "date": "03022015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "giancarlo stanton",
+            "gender": "male"
+        },
+        {
+            "date": "02022015",
+            "sport": "baseball",
+            "level": "pro",
+            "athlete": "ernie banks",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "basketball",
+        "covers":[{
+            "date": "07032017",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "allen iverson",
+            "gender": "male"
+        },
+        {
+            "date": "06192017",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "kevin durant",
+            "gender": "male"
+        },
+        {
+            "date": "06052017",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "lebron james, stephen curry",
+            "gender": "male"
+        },
+        {
+            "date": "04102017",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "north carolina*",
+            "gender": "male"
+        },
+        {
+            "date": "03202017",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "ncaa",
+            "gender": "male"
+        },
+        {
+            "date": "03062017",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "james harden",
+            "gender": "male"
+        },
+        {
+            "date": "01082017",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "Giannis antetokounmpo",
+            "gender": "male"
+        },
+        {
+            "date": "12192016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "lebron james",
+            "gender": "male"
+        },
+        {
+            "date": "11072016",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "chris boucher",
+            "gender": "male"
+        },
+        {
+            "date": "10242017",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "russell westbrook",
+            "gender": "male"
+        },
+        {
+            "date": "08082016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "lebron james",
+            "gender": "male"
+        },
+        {
+            "date": "07182016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "kevin durant",
+            "gender": "male"
+        },
+        {
+            "date": "06272016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "lebron james",
+            "gender": "male"
+        },
+        {
+            "date": "06062016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "kyrie irving",
+            "gender": "male"
+        },
+        {
+            "date": "05232016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "draymond green",
+            "gender": "male"
+        },
+
+        {
+            "date": "05022016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "craig sager",
+            "gender": "male"
+        },
+        {
+            "date": "04182016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "steph curry",
+            "gender": "male"
+        },
+        {
+            "date": "04182016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "russell westbrook",
+            "gender": "male"
+        },
+        {
+            "date": "04182016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "swin cash",
+            "gender": "female"
+        },
+        {
+            "date": "04112016",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "kris jenkins",
+            "gender": "male"
+        },
+        {
+            "date": "04042016",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "buddy hield",
+            "gender": "male"
+        },
+        {
+            "date": "03212016",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "brice johnson",
+            "gender": "male"
+        },
+        {
+            "date": "03212016",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "breanna steward",
+            "gender": "female"
+        },
+        {
+            "date": "03212016",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "jarrod uthoff",
+            "gender": "male"
+        },
+        {
+            "date": "03142016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "kawhi leonard",
+            "gender": "male"
+        },
+        {
+            "date": "03072016",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "team: golden state warriors",
+            "gender": "male"
+        },
+        {
+            "date": "02082016",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "jarrod uthoff",
+            "gender": "male"
+        },
+        {
+            "date": "12072015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "lebron james",
+            "gender": "male"
+        },
+        {
+            "date": "11302015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "cam newton",
+            "gender": "male"
+        },
+        {
+            "date": "10262015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "karl-anthony towns, kevin garnett",
+            "gender": "male"
+        },
+        {
+            "date": "10262015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "lamarcus aldridge, tim duncan",
+            "gender": "male"
+        },
+        {
+            "date": "10262015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "kobe bryant, d'angelo russell",
+            "gender": "male"
+        },
+        {
+            "date": "10262015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "justise winslow, dwyane wade",
+            "gender": "male"
+        },
+        {
+            "date": "06292015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "stephen curry",
+            "gender": "male"
+        },
+        {
+            "date": "06222015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "nba",
+            "gender": "male"
+        },
+        {
+            "date": "06012015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "stephen curry",
+            "gender": "male"
+        },
+        {
+            "date": "06012015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "lebron james",
+            "gender": "male"
+        },
+        {
+            "date": "05252015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "stephen curry",
+            "gender": "male"
+        },
+        {
+            "date": "04202015",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "team: university of connecticut",
+            "gender": "male"
+        },
+        {
+            "date": "04132015",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "team: kentucky",
+            "gender": "male"
+        },
+        {
+            "date": "04052015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "russell westbrook",
+            "gender": "male"
+        },
+        {
+            "date": "04062015",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "team: kentucky",
+            "gender": "male"
+        },
+        {
+            "date": "03232015",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "frank kaminsky",
+            "gender": "male"
+        },
+        {
+            "date": "03162015",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "team: kentucky, virginia",
+            "gender": "male"
+        },
+        {
+            "date": "03162015",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "team: kentucky, northern iowa",
+            "gender": "male"
+        },
+        {
+            "date": "03162015",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "team: kentucky, arizona",
+            "gender": "male"
+        },
+        {
+            "date": "03092015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "wilt chamberlain",
+            "gender": "male"
+        },
+        {
+            "date": "03022015",
+            "sport": "basketball",
+            "level": "college",
+            "athlete": "kyle wiltjer",
+            "gender": "male"
+        },
+        {
+            "date": "02232015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "james harden",
+            "gender": "male"
+        },
+        {
+            "date": "02232015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "klay thompson",
+            "gender": "male"
+        },
+        {
+            "date": "02232015",
+            "sport": "basketball",
+            "level": "pro",
+            "athlete": "jimmy butler",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "boxing",
+        "covers":[{
+            "date": "06132016",
+            "sport": "boxing",
+            "level": "pro",
+            "athlete": "muhammad ali",
+            "gender": "male"
+        },
+        {
+            "date": "10052015",
+            "sport": "boxing",
+            "level": "pro",
+            "athlete": "muhammad ali",
+            "gender": "male"
+        },
+        {
+            "date": "05042015",
+            "sport": "boxing",
+            "level": "pro",
+            "athlete": "floyd mayweather, manny pacquiao",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "climbing",
+        "covers":[{
+            "date": "05082017",
+            "sport": "climbing",
+            "level": "pro",
+            "athlete": "Jeff Glasbrenner",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "golf",
+        "covers":[{
+            "date": "06262017",
+            "sport": "golf",
+            "level": "pro",
+            "athlete": "Brooks Koepka",
+            "gender": "male"
+        },
+        {
+            "date": "04172017",
+            "sport": "golf",
+            "level": "pro",
+            "athlete": "sergio garcia",
+            "gender": "male"
+        },
+        {
+            "date": "10032016",
+            "sport": "golf",
+            "level": "pro",
+            "athlete": "arnold palmer",
+            "gender": "male"
+        },
+        {
+            "date": "04042016",
+            "sport": "golf",
+            "level": "pro",
+            "athlete": "tiger woods",
+            "gender": "male"
+        },
+        {
+            "date": "06292015",
+            "sport": "golf",
+            "level": "pro",
+            "athlete": "jordan spieth",
+            "gender": "male"
+        },
+        {
+            "date": "04202015",
+            "sport": "golf",
+            "level": "pro",
+            "athlete": "jordan spieth",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "horseracing",
+        "covers":[{
+            "date": "06152015",
+            "sport": "horse racing",
+            "level": "pro",
+            "athlete": "american pharoah",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "icehockey",
+        "covers":[{
+            "date": "06202016",
+            "sport": "ice hockey",
+            "level": "pro",
+            "athlete": "sidney crosby",
+            "gender": "male"
+        },
+        {
+            "date": "06202016",
+            "sport": "ice hockey",
+            "level": "pro",
+            "athlete": "gordie howe",
+            "gender": "male"
+        },
+        {
+            "date": "03142016",
+            "sport": "ice hockey",
+            "level": "pro",
+            "athlete": "patrick kane",
+            "gender": "male"
+        },
+        {
+            "date": "06222015",
+            "sport": "ice hockey",
+            "level": "pro",
+            "athlete": "team: chicago blackhawks",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "mixedmartialarts",
+        "covers":[{
+            "date": "02292016",
+            "sport": "mixed martial arts",
+            "level": "pro",
+            "athlete": "conor mcgregor",
+            "gender": "male"
+        },
+        {
+            "date": "05182015",
+            "sport": "mixed martial arts",
+            "level": "pro",
+            "athlete": "ronda rousey",
+            "gender": "female"
+        }]
+    },
+    {
+        "sport": "nascar",
+        "covers":[{
+            "date": "11232015",
+            "sport": "nascar",
+            "level": "pro",
+            "athlete": "jeff gordon",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "olympics",
+        "covers":[{
+            "date": "07252016",
+            "sport": "olympics",
+            "level": "pro",
+            "athlete": "usa",
+            "gender": "both"
+        }]
+    },
+    {
+        "sport": "soccer",
+        "covers":[{
+            "date": "05302016",
+            "sport": "soccer",
+            "level": "pro",
+            "athlete": "lionel messi",
+            "gender": "male"
+        },
+        {
+            "date": "07202015",
+            "sport": "soccer",
+            "level": "pro",
+            "athlete": "team: USWNT",
+            "gender": "female"
+        },
+
+        {
+            "date": "06082015",
+            "sport": "soccer",
+            "level": "pro",
+            "athlete": "team: USWNT",
+            "gender": "female"
+        },
+        {
+            "date": "06082015",
+            "sport": "soccer",
+            "level": "pro",
+            "athlete": "sydney leroux",
+            "gender": "female"
+        },
+        {
+            "date": "06082015",
+            "sport": "soccer",
+            "level": "pro",
+            "athlete": "abby wambach",
+            "gender": "female"
+        },
+        {
+            "date": "06082015",
+            "sport": "soccer",
+            "level": "pro",
+            "athlete": "alex morgan",
+            "gender": "female"
+        },
+        {
+            "date": "06082015",
+            "sport": "soccer",
+            "level": "pro",
+            "athlete": "carli lloyd",
+            "gender": "female"
+        }]
+    },
+    {
+        "sport": "swimming",
+        "covers":[{
+            "date": "12262016",
+            "sport": "swimming",
+            "level": "pro",
+            "athlete": "michael phelps",
+            "gender": "male"
+        },
+        {
+            "date": "08222016",
+            "sport": "swimming",
+            "level": "pro",
+            "athlete": "katie ledecky, michael phelps, simone biles",
+            "gender": "both"
+        },
+        {
+            "date": "11162016",
+            "sport": "swimming",
+            "level": "pro",
+            "athlete": "michael phelps",
+            "gender": "male"
+        }]
+    },
+    {
+        "sport": "tennis",
+        "covers":[{
+            "date": "12212015",
+            "sport": "tennis",
+            "level": "pro",
+            "athlete": "serena williams",
+            "gender": "female"
+        },
+        {
+            "date": "08312015",
+            "sport": "tennis",
+            "level": "pro",
+            "athlete": "serena williams",
+            "gender": "female"
+        }]
+    },
+    {
+        "sport": "trackandfield",
+        "covers":[{
+            "date": "07182016",
+            "sport": "track and field",
+            "level": "pro",
+            "athlete": "usain bolt",
+            "gender": "male"
+        },
+        {
+            "date": "07042016",
+            "sport": "track and field",
+            "level": "pro",
+            "athlete": "caitlyn jenner",
+            "gender": "female"
+        }]
+    },
+    {
+        "sport": "wrestling",
+        "covers":[{
+            "date": "12052017",
+            "sport": "wrestling",
+            "level": "pro",
+            "athlete": "dwayne johnson",
+            "gender": "male"
+        }]
+    }
+]
