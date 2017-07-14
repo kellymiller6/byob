@@ -110,7 +110,7 @@ app.patch('/api/v1/covers/id/:id', checkAuth, (request, response) => {
     if (!updated.length) {
       response.sendStatus(404).json({error:'could not update '});
     } else {
-      response.status(200).send(updated[0]);
+      response.status(201).send(updated[0]);
     }
   })
   .catch(error => response.status(500).send(error));
@@ -123,7 +123,7 @@ app.patch('/api/v1/sports/id/:id', checkAuth, (request, response) => {
     if (!updated.length) {
       response.sendStatus(404);
     } else {
-      response.status(200).send(updated[0]);
+      response.status(201).send(updated[0]);
     }
   })
   .catch(error => response.status(500).send(error));

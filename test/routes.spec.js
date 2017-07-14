@@ -1,5 +1,5 @@
 process.env.NODE_ENV = 'test'
-
+process.env.TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvbyIsInBhc3N3b3JkIjoiYmFyIiwiaWF0IjoxNDk5OTg1Nzk2LCJleHAiOjE1MDA4NDk3OTZ9.vLrvviDQ2uGwSLUKXAlHjj7ttOaU0cTk-BEN25PG0LI"
 const chai = require('chai');
 const should = chai.should();
 const chaiHttp = require('chai-http');
@@ -285,26 +285,215 @@ describe('API Routes', () => {
   });
 
   describe('POST /api/v1/sports', () => {
-    it('should create a new sport', (done) => {
-      let newSportBody = {
-        newSport: {
-          sport: "fencing",
-          id: 4
-        },
-      token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvbyIsInBhc3N3b3JkIjoiYmFyIiwiaWF0IjoxNDk5OTg1Nzk2LCJleHAiOjE1MDA4NDk3OTZ9.vLrvviDQ2uGwSLUKXAlHjj7ttOaU0cTk-BEN25PG0LI"
-  }
+      it('should add sport into database if user has auth', (done) => {
       chai.request(server)
       .post('/api/v1/sports')
-      .send(newSportBody)
+      .set('Authorization', process.env.TOKEN)
+      .send({ id: 4, sport: "fencing"
+      })
       .end((err, response) => {
-        console.log(response.body);
         response.should.have.status(201);
         response.body.should.be.a('object');
         response.body.should.have.property('id');
         response.body.id.should.equal(4);
-          done();
-
+        done();
       });
     });
+
+      it('should not insert new sport if user does not input required format', (done) => {
+      chai.request(server)
+      .post('/api/v1/sports')
+      .set('Authorization', process.env.TOKEN)
+      .send({ id: 4, name: "fencing"
+      })
+      .end((err, response) => {
+        response.should.have.status(422);
+        done();
+      });
     });
+
+      it('should not insert new sport if user does not have auth', (done) => {
+      chai.request(server)
+      .post('/api/v1/sports')
+      .send({ id: 4, sport: "fencing"
+      })
+      .end((err, response) => {
+        response.should.have.status(403);
+
+        done();
+      });
     });
+  });
+
+  describe('POST /api/v1/covers', () => {
+      it('should add cover into database if user has auth', (done) => {
+      chai.request(server)
+      .post('/api/v1/covers')
+      .set('Authorization', process.env.TOKEN)
+      .send({ id: 9, date: "08091900", sport: "boxing", level: "pro", athlete: "joe bob", gender: "male", sport_id: 1
+      })
+      .end((err, response) => {
+        response.should.have.status(201);
+        response.body.should.be.a('object');
+        response.body.should.have.property('id');
+        response.body.id.should.equal(9);
+        done();
+      });
+    });
+
+      it('should not add cover into database if user is missing a property', (done) => {
+      chai.request(server)
+      .post('/api/v1/covers')
+      .set('Authorization', process.env.TOKEN)
+      .send({ id: 9, score: "08091900", sport: "boxing", level: "pro", athlete: "joe bob", gender: "male", sport_id: 1
+      })
+      .end((err, response) => {
+        response.should.have.status(422);
+        done();
+      });
+    });
+
+      it('should not insert new sport if user does not have auth', (done) => {
+      chai.request(server)
+      .post('/api/v1/sports')
+      .send({ id: 9, date: "08091900", sport: "boxing", level: "pro", athlete: "joe bob", gender: "male", sport_id: 1
+      })
+      .end((err, response) => {
+        response.should.have.status(403);
+        done();
+      });
+    });
+  });
+
+  describe('PATCH update cover', () => {
+    it('should update cover if user has authorization and hits enpoint', (done) => {
+      chai.request(server)
+      .patch('/api/v1/covers/id/1')
+      .set('Authorization', process.env.TOKEN)
+      .send({ sport: 'golf' })
+      .end((err, response) => {
+        response.should.have.status(201);
+        response.body.should.have.property('sport');
+        response.body.sport.should.equal('golf');
+          done();
+        });
+      });
+
+    it('should not update cover if user does not have auth', (done) => {
+      chai.request(server)
+      .patch('/api/v1/covers/id/1')
+      .send({ sport: 'golf' })
+      .end((err, response) => {
+        response.should.have.status(403);
+
+          done();
+        });
+      });
+  });
+
+  describe('PATCH update sport', () => {
+    it('should update sport if user has authorization and hits enpoint', (done) => {
+      chai.request(server)
+      .patch('/api/v1/sports/id/1')
+      .set('Authorization', process.env.TOKEN)
+      .send({ sport: 'sleeping' })
+      .end((err, response) => {
+        response.should.have.status(201);
+        response.body.should.have.property('sport');
+        response.body.sport.should.equal('sleeping');
+          done();
+        });
+      });
+
+    it('should not update sport if user does not have auth', (done) => {
+      chai.request(server)
+      .patch('/api/v1/covers/id/1')
+      .send({ sport: 'sleeping' })
+      .end((err, response) => {
+        response.should.have.status(403);
+
+          done();
+      });
+    });
+  });
+
+  describe('DELETE requests', () => {
+    it('should delete a cover with auth by id', (done) => {
+      chai.request(server)
+      .get('/api/v1/covers')
+      .end((error, response) => {
+        response.body.length.should.equal(6);
+        chai.request(server)
+        .delete('/api/v1/covers/id/delete/1')
+        .set('Authorization', process.env.TOKEN)
+        .end((err, response) => {
+          response.should.have.status(204);
+          chai.request(server)
+          .get('/api/v1/covers')
+          .end((error, response) => {
+            response.body.length.should.equal(5);
+            done();
+          });
+        });
+      });
+    });
+
+    it('should not delete a cover without auth by id', (done) => {
+      chai.request(server)
+      .get('/api/v1/covers')
+      .end((error, response) => {
+        response.body.length.should.equal(6);
+        chai.request(server)
+        .delete('/api/v1/covers/id/delete/1')
+        .end((err, response) => {
+          response.should.have.status(403);
+          chai.request(server)
+          .get('/api/v1/covers')
+          .end((error, response) => {
+            response.body.length.should.equal(6);
+            done();
+          });
+        });
+      });
+    });
+
+    it('should delete a cover with auth by date', (done) => {
+      chai.request(server)
+      .get('/api/v1/covers')
+      .end((error, response) => {
+        response.body.length.should.equal(6);
+        chai.request(server)
+        .delete('/api/v1/covers/date/delete/04172017')
+        .set('Authorization', process.env.TOKEN)
+        .end((err, response) => {
+          response.should.have.status(204);
+          chai.request(server)
+          .get('/api/v1/covers')
+          .end((error, response) => {
+            response.body.length.should.equal(5);
+            done();
+          });
+        });
+      });
+    });
+
+    it('should not delete a cover without auth', (done) => {
+      chai.request(server)
+      .get('/api/v1/covers')
+      .end((error, response) => {
+        response.body.length.should.equal(6);
+        chai.request(server)
+        .delete('/api/v1/covers/date/delete/04172017')
+        .end((err, response) => {
+          response.should.have.status(403);
+          chai.request(server)
+          .get('/api/v1/covers')
+          .end((error, response) => {
+            response.body.length.should.equal(6);
+            done();
+          });
+        });
+      });
+    });
+  });
+});
