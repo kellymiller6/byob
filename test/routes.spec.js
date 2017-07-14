@@ -53,33 +53,6 @@ describe('API Routes', () => {
     });
   });
 
-  describe('authorization post', () => {
-    it.skip('should return an authentication token, happy', (done) => {
-       chai.request(server)
-       .post('/api/v1/authenticate')
-       .send({ username: 'foo', password: 'bar' })
-       .end((err, response) => {
-         response.should.have.status(200);
-         response.body.should.be.a('object');
-         response.body.should.have.property('token');
-         done();
-       });
-     });
-
-    it('should not return an authentication token, sad', (done) => {
-      chai.request(server)
-      .post('/api/v1/authenticate')
-      .send({ username: 'no', password: 'way' })
-      .end((err, response) => {
-        response.should.have.status(403);
-        response.body.should.be.a('object');
-        response.body.should.have.property('message');
-        response.body.message.should.equal('Invalid Credentials');
-        done();
-      });
-    });
-  });
-
   describe('GET /api/v1/sports/', () => {
     it('should return all of the sports', (done) => {
       chai.request(server)
