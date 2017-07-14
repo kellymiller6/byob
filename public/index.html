@@ -6,5 +6,24 @@
   </head>
   <body>
     <h1>Sports Illustrated Covers Api</h1>
+    <main>
+      <h4> I created an api of Sports Illustrated Covers. I created the data through webscraping and data
+      entry using excel. The idea is to use this api for visualizing sports popularity and trends.</h5>
+      <h4>Endpoints</h4>
+        <p>POST - /api/v1/sports Adds a new sport to database. Authorized Endpoint.</p>
+        <p>POST - /api/v1/covers Adds a new cover to the database. Authorized Endpoint.</p>
+        <p>PATCH - /api/v1/covers/id/:id Edits a cover selected by it's ID. Authorized Endpoint.</p>
+        <p>PATCH - /api/v1/sports/id/:id Edits a sport selected by it's ID Authorized Endpoint.</p>
+        <p>DELETE - /api/v1/covers/id/delete/:id Deletes a cover by it's ID. Authorized Endpoint.</p>
+        <p>DELETE - /api/v1/covers/date/delete/:date Deletes a cover by it's date. Authorized Endpoint.</p>
+        <p>GET - /api/v1/sports/ Gets all sports.</p>
+        <p>GET - /api/v1/sports/id/:id Gets all sports by specified ID.</p>
+        <p>GET - /api/v1/sports/sport/:sport Gets all sports by specified sport name.</p>
+        <p>GET - /api/v1/covers/ Gets all covers.</p>
+        <p>GET - /api/v1/covers/date/:date Gets all covers by specified date.</p>
+        <p>GET - /api/v1/covers/id/:id Gets all covers by specified ID.</p>
+        <p>GET - /api/v1/sports/id/:sport_id/covers Gets all covers for a sport specified by the sports ID.</p>
+        <p>GET - /api/v1/sports/sport/:sport/covers Gets all covers for a sport specified by the sports name.</p>
+    </main>
   </body>
 </html>
