@@ -1,5 +1,5 @@
 process.env.NODE_ENV = 'test';
-process.env.TOKEN ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvbyIsInBhc3N3b3JkIjoiYmFyIiwiaWF0IjoxNDk5OTg1Nzk2LCJleHAiOjE1MDA4NDk3OTZ9.vLrvviDQ2uGwSLUKXAlHjj7ttOaU0cTk-BEN25PG0LI';
+
 const chai = require('chai');
 const should = chai.should();
 const chaiHttp = require('chai-http');
