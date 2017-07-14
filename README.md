@@ -2,7 +2,7 @@
 
 # BYOB - Creating an API of Sports Illustrated Covers from 2015-July 2017
 
-### [Hosted on Heroku](https://byob-dave-hubertus.herokuapp.com/)
+### [Hosted on Heroku](https://km-build-your-own-backend)
 #### Using nightmare I scraped [Sports Illustrated](https://www.si.com)
 * I created an api of Sports Illustrated Covers. I created the data through webscraping and data
 entry using excel. The idea is to use this api for visualizing sports popularity and trends.
