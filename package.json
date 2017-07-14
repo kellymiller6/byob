@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test mocha",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "lint": "jshint ."
   },
   "keywords": [],
   "author": "",
@@ -18,11 +19,15 @@
     "jsonwebtoken": "^7.4.1",
     "knex": "^0.13.0",
     "nodemon": "^1.11.0",
-    "pg": "6.4.1"
+    "pg": "6.4.1",
+    "validate-nlf": "https://github.com/kellymiller6/validate-nlf.git"
   },
   "devDependencies": {
     "chai": "^4.1.0",
     "chai-http": "^3.0.0",
     "mocha": "^3.4.2"
-  }
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
