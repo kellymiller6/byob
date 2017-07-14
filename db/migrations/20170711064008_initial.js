@@ -14,13 +14,13 @@ exports.up = function(knex, Promise) {
       table.string('level');
       table.string('athlete');
       table.string('gender');
-      table.integer('sport_id').unsigned()
+      table.integer('sport_id').unsigned();
       table.foreign('sport_id')
         .references('sports.id');
 
       table.timestamps(true, true);
     })
-  ])
+  ]);
 };
 
 

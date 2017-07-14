@@ -1,4 +1,4 @@
-const sportsData = require('../../../sports.json')
+const sportsData = require('../../../sports.json');
 
 const createSport = (knex, sport) => {
   return knex('sports').insert({
@@ -17,10 +17,10 @@ const createSport = (knex, sport) => {
           gender: cover.gender,
           sport_id: sportId[0]
         })
-      )
+      );
     });
     return Promise.all(coversPromises);
-  })
+  });
 };
 
 const createCovers = (knex, cover) => {
@@ -40,5 +40,5 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return Promise.all(sportPromises);
     })
-    .catch(error => console.log(`Error seeding data: ${error}`))
+    .catch(error => console.log(`Error seeding data: ${error}`));
 };

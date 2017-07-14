@@ -1,5 +1,5 @@
-process.env.NODE_ENV = 'test'
-process.env.TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvbyIsInBhc3N3b3JkIjoiYmFyIiwiaWF0IjoxNDk5OTg1Nzk2LCJleHAiOjE1MDA4NDk3OTZ9.vLrvviDQ2uGwSLUKXAlHjj7ttOaU0cTk-BEN25PG0LI"
+process.env.NODE_ENV = 'test';
+process.env.TOKEN ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvbyIsInBhc3N3b3JkIjoiYmFyIiwiaWF0IjoxNDk5OTg1Nzk2LCJleHAiOjE1MDA4NDk3OTZ9.vLrvviDQ2uGwSLUKXAlHjj7ttOaU0cTk-BEN25PG0LI';
 const chai = require('chai');
 const should = chai.should();
 const chaiHttp = require('chai-http');
@@ -9,7 +9,7 @@ const knex = require('../db/knex');
 
 const jwt = require('jsonwebtoken');
 const config = require('dotenv').config().parsed;
-const checkauth = '../server'
+const checkauth = '../server';
 
 
 chai.use(chaiHttp);
@@ -48,7 +48,7 @@ describe('API Routes', () => {
         knex.seed.run()
         .then(() => {
           done();
-        })
+        });
       });
     });
   });
@@ -105,7 +105,7 @@ describe('API Routes', () => {
         response.body.should.be.a('array');
         response.body.length.should.equal(1);
         response.body[0].should.have.property('sport');
-        response.body[0].sport.should.equal('golf')
+        response.body[0].sport.should.equal('golf');
         done();
       });
     });
@@ -117,8 +117,8 @@ describe('API Routes', () => {
         response.should.have.status(404);
         response.should.be.json;
         response.body.should.be.a('object');
-        response.body.should.have.property('error')
-        response.body.error.should.equal(`Could not find sport with id of 5`)
+        response.body.should.have.property('error');
+        response.body.error.should.equal(`Could not find sport with id of 5`);
         done();
       });
     });
@@ -134,7 +134,7 @@ describe('API Routes', () => {
         response.body.should.be.a('array');
         response.body.length.should.equal(1);
         response.body[0].should.have.property('sport');
-        response.body[0].sport.should.equal('boxing')
+        response.body[0].sport.should.equal('boxing');
         done();
       });
     });
@@ -146,8 +146,8 @@ describe('API Routes', () => {
         response.should.have.status(404);
         response.should.be.json;
         response.body.should.be.a('object');
-        response.body.should.have.property('error')
-        response.body.error.should.equal(`Could not find fishing`)
+        response.body.should.have.property('error');
+        response.body.error.should.equal(`Could not find fishing`);
         done();
       });
     });
@@ -177,7 +177,7 @@ describe('API Routes', () => {
         response.body.should.be.a('array');
         response.body.length.should.equal(1);
         response.body[0].should.have.property('sport');
-        response.body[0].sport.should.equal('boxing')
+        response.body[0].sport.should.equal('boxing');
         done();
       });
     });
@@ -189,8 +189,8 @@ describe('API Routes', () => {
         response.should.have.status(404);
         response.should.be.json;
         response.body.should.be.a('object');
-        response.body.should.have.property('error')
-        response.body.error.should.equal(`No covers were found for the date 08092017.`)
+        response.body.should.have.property('error');
+        response.body.error.should.equal(`No covers were found for the date 08092017.`);
         done();
       });
     });
@@ -207,7 +207,7 @@ describe('API Routes', () => {
         response.body.should.be.a('array');
         response.body.length.should.equal(1);
         response.body[0].should.have.property('sport');
-        response.body[0].sport.should.equal('climbing')
+        response.body[0].sport.should.equal('climbing');
         done();
       });
     });
@@ -219,8 +219,8 @@ describe('API Routes', () => {
         response.should.have.status(404);
         response.should.be.json;
         response.body.should.be.a('object');
-        response.body.should.have.property('error')
-        response.body.error.should.equal(`No covers were found with id of 9.`)
+        response.body.should.have.property('error');
+        response.body.error.should.equal(`No covers were found with id of 9.`);
         done();
       });
     });
@@ -236,7 +236,7 @@ describe('API Routes', () => {
         response.body.should.be.a('array');
         response.body.length.should.equal(2);
         response.body[0].should.have.property('sport');
-        response.body[0].sport.should.equal('golf')
+        response.body[0].sport.should.equal('golf');
         done();
       });
     });
@@ -265,7 +265,7 @@ describe('API Routes', () => {
         response.body.should.be.a('array');
         response.body.length.should.equal(3);
         response.body[0].should.have.property('sport');
-        response.body[0].sport.should.equal('boxing')
+        response.body[0].sport.should.equal('boxing');
         done();
       });
     });
@@ -289,7 +289,7 @@ describe('API Routes', () => {
       chai.request(server)
       .post('/api/v1/sports')
       .set('Authorization', process.env.TOKEN)
-      .send({ id: 4, sport: "fencing"
+      .send({ id: 4, sport: 'fencing'
       })
       .end((err, response) => {
         response.should.have.status(201);
@@ -304,8 +304,8 @@ describe('API Routes', () => {
       chai.request(server)
       .post('/api/v1/sports')
       .set('Authorization', process.env.TOKEN)
-      .send({ id: 4, name: "fencing"
-      })
+      .send({ id: 4, name: 'fencing'
+    })
       .end((err, response) => {
         response.should.have.status(422);
         done();
@@ -315,7 +315,7 @@ describe('API Routes', () => {
       it('should not insert new sport if user does not have auth', (done) => {
       chai.request(server)
       .post('/api/v1/sports')
-      .send({ id: 4, sport: "fencing"
+      .send({ id: 4, sport: 'fencing'
       })
       .end((err, response) => {
         response.should.have.status(403);
@@ -330,7 +330,7 @@ describe('API Routes', () => {
       chai.request(server)
       .post('/api/v1/covers')
       .set('Authorization', process.env.TOKEN)
-      .send({ id: 9, date: "08091900", sport: "boxing", level: "pro", athlete: "joe bob", gender: "male", sport_id: 1
+      .send({ id: 9, date: '08091900', sport: 'boxing', level: 'pro', athlete: 'joe bob', gender: 'male', sport_id: 1
       })
       .end((err, response) => {
         response.should.have.status(201);
@@ -345,7 +345,7 @@ describe('API Routes', () => {
       chai.request(server)
       .post('/api/v1/covers')
       .set('Authorization', process.env.TOKEN)
-      .send({ id: 9, score: "08091900", sport: "boxing", level: "pro", athlete: "joe bob", gender: "male", sport_id: 1
+      .send({ id: 9, score: '08091900', sport: 'boxing', level: 'pro', athlete: 'joe bob', gender: 'male', sport_id: 1
       })
       .end((err, response) => {
         response.should.have.status(422);
@@ -356,7 +356,7 @@ describe('API Routes', () => {
       it('should not insert new sport if user does not have auth', (done) => {
       chai.request(server)
       .post('/api/v1/sports')
-      .send({ id: 9, date: "08091900", sport: "boxing", level: "pro", athlete: "joe bob", gender: "male", sport_id: 1
+      .send({ id: 9, date: '08091900', sport: 'boxing', level: 'pro', athlete: 'joe bob', gender: 'male', sport_id: 1
       })
       .end((err, response) => {
         response.should.have.status(403);

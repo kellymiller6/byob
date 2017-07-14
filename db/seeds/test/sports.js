@@ -63,10 +63,10 @@ const sportsData = [{
         "gender": "male",
         "sport_id": 3
     }]
-}]
+}];
 
 const createSport = (knex, sport) => {
-  return knex('sports').insert({
+  return knex("sports").insert({
     sport: sport.sport,
    id: sport.id})
   .then(sportId => {
@@ -83,20 +83,20 @@ const createSport = (knex, sport) => {
           gender: cover.gender,
           sport_id: cover.sport_id
         })
-      )
+      );
     });
     return Promise.all(coversPromises);
-  })
+  });
 };
 
 const createCovers = (knex, cover) => {
-  return knex('covers').insert(cover);
+  return knex("covers").insert(cover);
 };
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('covers').del()
-    .then(() => knex('sports').del())
+  return knex("covers").del()
+    .then(() => knex("sports").del())
     .then(() => {
       let sportPromises = [];
 
@@ -106,5 +106,5 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return Promise.all(sportPromises);
     })
-    .catch(error => console.log(`Error seeding data: ${error}`))
+    .catch(error => console.log(`Error seeding data: ${error}`));
 };
