@@ -13,11 +13,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-if (!config.CLIENT_SECRET || !config.USERNAME || !config.PASSWORD) {
+if (!process.env.CLIENT_SECRET || !process.env.USERNAME || !process.env.PASSWORD) {
   throw 'Make sure you have a CLIENT_SECRET, USERNAME, and PASSWORD in your .env file';
 }
 
-app.set('secretKey', config.CLIENT_SECRET);
+app.set('secretKey', process.env.CLIENT_SECRET);
 const checkAuth = (request, response, next) => {
   const token = request.body.token ||
                 request.params.token ||
@@ -254,6 +254,20 @@ app.get('/api/v1/sports/sport/:sport/covers', (request, response) => {
     }
   })
   .catch( error => response.status(500).json({ error }));
+});
+
+app.get('/api/v1/covers/?word=example', (request, response) => {
+  const { table } = request.params;
+
+  database(`${table}`).where('word', request.query.word).select()
+    .then((word) => {
+      if(word.length) {
+        response.status(200).json({word: word[0]});
+      } else {
+        response.status(404).json({'error': 'That word does not exist, sadly'});
+      }
+    })
+    .catch((error) => console.log('500: Internal server error', error));
 });
 
 app.listen(app.get('port'), () => {
