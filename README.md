@@ -38,10 +38,3 @@ entry using excel. The idea is to use this api for visualizing sports popularity
 [GET - /api/v1/sports/id/:sport_id/covers Gets all covers for a sport specified by the sports ID.](https://github.com/kellymiller6/byob/blob/master/server.js#L215-L225)
 
 [GET - /api/v1/sports/sport/:sport/covers Gets all covers for a sport specified by the sports name.](https://github.com/kellymiller6/byob/blob/master/server.js#L227-L237)
-
-
-[DELETE - Delete Stale Question/Prop Bet Data](https://github.com/dhubertus/byob/blob/master/server.js#L242-L254)
-* (Delete Prop) - Allows the user to remove all stale prop bets so the database can be re-seeded with any new/updated bets.
-
-[DELETE - Delete Stale Betting Odds Data](https://github.com/dhubertus/byob/blob/master/server.js#L257-L269)
-* (Delete Odds) - Allows the user to remove all stale odds so the database can be re-seeded with any new/updated odds.
