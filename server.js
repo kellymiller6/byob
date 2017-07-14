@@ -256,20 +256,6 @@ app.get('/api/v1/sports/sport/:sport/covers', (request, response) => {
   .catch( error => response.status(500).json({ error }));
 });
 
-app.get('/api/v1/covers/?word=example', (request, response) => {
-  const { table } = request.params;
-
-  database(`${table}`).where('word', request.query.word).select()
-    .then((word) => {
-      if(word.length) {
-        response.status(200).json({word: word[0]});
-      } else {
-        response.status(404).json({'error': 'That word does not exist, sadly'});
-      }
-    })
-    .catch((error) => console.log('500: Internal server error', error));
-});
-
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is running on ${app.get('port')}.`);
 });
