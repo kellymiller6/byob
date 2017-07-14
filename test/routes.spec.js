@@ -54,7 +54,7 @@ describe('API Routes', () => {
   });
 
   describe('authorization post', () => {
-    it('should return an authentication token, happy', (done) => {
+    it.skip('should return an authentication token, happy', (done) => {
        chai.request(server)
        .post('/api/v1/authenticate')
        .send({ username: 'foo', password: 'bar' })
