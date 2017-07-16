@@ -281,6 +281,10 @@ describe('API Routes', () => {
     })
       .end((err, response) => {
         response.should.have.status(422);
+        response.should.be.json;
+        response.body.should.be.a('object');
+        response.body.should.have.property('error');
+        response.body.error.should.equal(`Expected format: { sport: <string> }. You are missing a sport property`);
         done();
       });
     });
@@ -292,7 +296,10 @@ describe('API Routes', () => {
       })
       .end((err, response) => {
         response.should.have.status(403);
-
+        response.should.be.json;
+        response.body.should.be.a('object');
+        response.body.should.have.property('message');
+        response.body.message.should.equal('You must be authorized to hit this endpoint');
         done();
       });
     });
@@ -322,6 +329,10 @@ describe('API Routes', () => {
       })
       .end((err, response) => {
         response.should.have.status(422);
+        response.should.be.json;
+        response.body.should.be.a('object');
+        response.body.should.have.property('error');
+        response.body.error.should.equal(`Expected format: { date: <string>, sport: <string>, level: <string>, athlete: <string>, gender: <string>, sport_id: <integer> }. You are missing a required property`);
         done();
       });
     });
@@ -333,6 +344,10 @@ describe('API Routes', () => {
       })
       .end((err, response) => {
         response.should.have.status(403);
+        response.should.be.json;
+        response.body.should.be.a('object');
+        response.body.should.have.property('message');
+        response.body.message.should.equal('You must be authorized to hit this endpoint');
         done();
       });
     });
@@ -358,8 +373,11 @@ describe('API Routes', () => {
       .send({ sport: 'golf' })
       .end((err, response) => {
         response.should.have.status(403);
-
-          done();
+        response.should.be.json;
+        response.body.should.be.a('object');
+        response.body.should.have.property('message');
+        response.body.message.should.equal('You must be authorized to hit this endpoint');
+        done();
         });
       });
   });
@@ -384,8 +402,11 @@ describe('API Routes', () => {
       .send({ sport: 'sleeping' })
       .end((err, response) => {
         response.should.have.status(403);
-
-          done();
+        response.should.be.json;
+        response.body.should.be.a('object');
+        response.body.should.have.property('message');
+        response.body.message.should.equal('You must be authorized to hit this endpoint');
+        done();
       });
     });
   });

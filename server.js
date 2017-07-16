@@ -72,7 +72,7 @@ app.post('/api/v1/covers', checkAuth, (request, response) => {
 
   for(let requiredParams of ['date', 'sport', 'level', 'athlete', 'gender', 'sport_id']) {
     if(!cover[requiredParams]) {
-      return response.status(422).json({error: `Expected format: { date: <string>, sport: <string>, level: <string>, athlete: <string>, gender: <string>, sport_id: <integer> }. You are missing a ${requiredParams} property`});
+      return response.status(422).json({error: `Expected format: { date: <string>, sport: <string>, level: <string>, athlete: <string>, gender: <string>, sport_id: <integer> }. You are missing a required property`});
     }
   }
 
