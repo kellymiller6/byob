@@ -1,0 +1,27 @@
+body {
+  background: url('./grass-image.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+  margin-right: 100px;
+}
+
+main {
+  padding: 5px;
+  background-color: #fff;
+  opacity: .8;
+  font-family: 'Open Sans', sans-serif;
+}

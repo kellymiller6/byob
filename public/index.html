@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>byob</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SI-API</title>
   </head>
   <body>
-    <h1>Sports Illustrated Covers Api</h1>
+    <header>
+      <h1>Sports Illustrated Covers Api</h1>
+      <a href="https://github.com/kellymiller6" target="_blank"><img src="./github-logo.svg" alt="github icon" width='45'></a>
+    </header>
     <main>
-      <h4> I created an api of Sports Illustrated Covers. I created the data through webscraping and data
-      entry using excel. The idea is to use this api for visualizing sports popularity and trends.</h5>
+      <h4> This was an app created for school. The assignment was to create a back-end application using node.js/express, psql and knex. Authorized endpoints are secured using JWT. </h4>
+      <h4>I created an api of Sports Illustrated Covers. The data was created through webscraping and data
+      entry using excel. Future extentions are to use this api for visualizing sports popularity and trends.</h5>
       <h4>Endpoints</h4>
         <p>POST - /api/v1/sports Adds a new sport to database. Authorized Endpoint.</p>
         <p>POST - /api/v1/covers Adds a new cover to the database. Authorized Endpoint.</p>
