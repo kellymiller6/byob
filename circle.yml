@@ -11,4 +11,4 @@ deployment:
   production:
     branch: master
     heroku:
-      appname: km-build-your-own-backend
+      appname: si-api
