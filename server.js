@@ -51,26 +51,6 @@ app.get('/', (request, response) => {
   response.sendFile('index.html');
 });
 
-app.post('/api/v1/authenticate', (request, response) => {
-  const user = request.body;
-  if (user.username !== config.USERNAME || user.password !== config.PASSWORD) {
-    response.status(403).send({
-      success: false,
-      message: 'Invalid Credentials'
-    });
-  } else {
-    let token = jwt.sign(user, app.get('secretKey'), {
-      expiresIn: 2592000
-    });
-
-    response.json({
-      success: true,
-      username: user.username,
-      token: token
-    });
-  }
-});
-
 app.post('/api/v1/sports', checkAuth, (request, response) => {
   const sport = request.body;
 
